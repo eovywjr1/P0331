@@ -4,22 +4,22 @@ using namespace std;
 
 int main()
 {
-	int num1 = 1, num2 = 2;
+	const int Num1 = 1, Num2 = 2;
 
-	cout << "int variable print" << endl;
-	cout << num1 + num2 << endl;
-	cout << num1 - num2 << endl;
-	cout << num1 / num2 << endl;
-	cout << num1 * num2 << endl;
-	cout << num1 % num2 << endl;
+	cout << "Int Variable Print" << endl;
+	cout << Num1 + Num2 << endl;
+	cout << Num1 - Num2 << endl;
+	cout << Num1 / Num2 << endl;
+	cout << Num1 * Num2 << endl;
+	cout << Num1 % Num2 << endl;
 
-	float num3 = 1.5f, num4 = 2.5f;
+	const float Num3 = 1.5f, Num4 = 2.5f;
 	
-	cout << "float var4able print" << endl;
-	cout << num3 + num4 << endl;
-	cout << num3 - num4 << endl;
-	cout << num3 / num4 << endl;
-	cout << num3 * num4 << endl;
+	cout << "Float Variable Print" << endl;
+	cout << Num3 + Num4 << endl;
+	cout << Num3 - Num4 << endl;
+	cout << Num3 / Num4 << endl;
+	cout << Num3 * Num4 << endl;
 			   
 	return 0;
 }
