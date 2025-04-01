@@ -4,22 +4,48 @@ using namespace std;
 
 int main()
 {
-	const int Num1 = 1, Num2 = 2;
+	//int Map[10][10] =
+	//{
+	//	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+	//	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	//	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	//	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	//	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	//	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	//	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	//	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	//	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	//	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+	//};
 
-	cout << "Int Variable Print" << endl;
-	cout << Num1 + Num2 << endl;
-	cout << Num1 - Num2 << endl;
-	cout << Num1 / Num2 << endl;
-	cout << Num1 * Num2 << endl;
-	cout << Num1 % Num2 << endl;
+	int Count = 0;
+	cin >> Count;
 
-	const float Num3 = 1.5f, Num4 = 2.5f;
-	
-	cout << "Float Variable Print" << endl;
-	cout << Num3 + Num4 << endl;
-	cout << Num3 - Num4 << endl;
-	cout << Num3 / Num4 << endl;
-	cout << Num3 * Num4 << endl;
-			   
+	for (int Y = 1; Y <= Count; ++Y)
+	{
+		for (int X = 1; X <= Y; ++X)
+		{
+			cout << '*';
+		}
+
+		cout << '\n';
+	}
+
+	for (int Y = 1; Y <= Count; ++Y)
+	{
+
+		for (int X = 1; X < Y; ++X)
+		{
+			cout << ' ';
+		}
+
+		for (int X = 1; X <= Count - Y + 1; ++X)
+		{
+			cout << '*';
+		}
+
+		cout << '\n';
+	}
+
 	return 0;
 }
